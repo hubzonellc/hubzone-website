@@ -14,7 +14,7 @@ Change the 4 `--accent*` values at the top of `css/styles.css` (example gold val
 ## Forms (Netlify Forms)
 - `candidate` (Find a Job, with resume upload), `company` (Hire Talent), `contact` (Contact). All redirect to `thank-you.html`.
 - Each form sends a hidden `language` field (en/es) so the recruiter knows which language to reply in.
-- After first deploy: Netlify → Forms → enable form detection, then add an email notification to javier@hubzonellc.com.
+- After first deploy: Netlify → Forms → enable form detection, then add an email notification to privera@hubzonellc.com.
 - ⚠️ Check Netlify's current free-plan limits on form submissions and **file upload storage** before launch. Resumes can use that up fast. Backup plan: make resume optional (it already is) and ask for it by email.
 
 ## Placeholders to fill (search the HTML for `placeholder`)
