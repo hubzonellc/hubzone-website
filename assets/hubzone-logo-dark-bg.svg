@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 300 90">
+<g stroke="#ffffff" stroke-width="3.5"><line x1="45" y1="45" x2="81" y2="45"/><line x1="45" y1="45" x2="63" y2="76"/><line x1="45" y1="45" x2="27" y2="76"/><line x1="45" y1="45" x2="9" y2="45"/><line x1="45" y1="45" x2="27" y2="14"/><line x1="45" y1="45" x2="63" y2="14"/></g>
+<g fill="#2dd4bf"><circle cx="81" cy="45" r="7"/><circle cx="63" cy="76" r="7"/><circle cx="27" cy="76" r="7"/><circle cx="9" cy="45" r="7"/><circle cx="27" cy="14" r="7"/><circle cx="63" cy="14" r="7"/></g>
+<circle cx="45" cy="45" r="13" fill="#ffffff"/>
+<text x="100" y="52" font-family="Segoe UI,Arial,Helvetica,sans-serif" font-weight="800" font-size="30" fill="#ffffff">HUB ZONE</text>
+<text x="102" y="74" font-family="Segoe UI,Arial,Helvetica,sans-serif" font-weight="600" font-size="13" letter-spacing="6" fill="#2dd4bf">STAFFING</text></svg>
