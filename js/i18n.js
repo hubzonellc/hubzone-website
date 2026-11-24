@@ -156,7 +156,7 @@ window.HZ_ES = {
   "title.services": "Servicios | Hub Zone Staffing",
   "about.eyebrow": "Sobre Hub Zone",
   "about.h1": "El punto donde se encuentran empresas y personas",
-  "about.lede": "Creative Financial Staffing of Puerto Rico ahora es Hub Zone, LLC, y estamos expandiendo nuestros servicios al mercado laboral de Carolina del Norte y Carolina del Sur.",
+  "about.lede": "Con 30 años de experiencia en el mercado de reclutamiento de Puerto Rico, Hub Zone, LLC ahora se expande a Carolina del Norte y Carolina del Sur.",
   "about.founder": "Conozca al fundador",
   "ph.name": "Nombre completo y cargo del fundador.",
   "ph.bio": "Biografía corta: logros, industrias que mejor conoce, por qué fundó Hub Zone. 3–5 oraciones.",
