@@ -52,6 +52,8 @@ window.HZ_ES = {
   "nav.menu": "Menú",
   "a11y.mainnav": "Principal",
   "nav.home": "Inicio",
+  "story.title2": "Fundador",
+  "story.p2": "Pedro ayuda a profesionales de finanzas, contabilidad, TI y recursos humanos, y a las empresas que los contratan, ahora en Carolina del Norte, Carolina del Sur y Puerto Rico.",
   "about.bio1": "Pedro E. Rivera es el fundador de Hub Zone, LLC. Después de 30 años en el mercado de reclutamiento de Puerto Rico, está expandiendo los servicios de Hub Zone al mercado laboral de Carolina del Norte y Carolina del Sur.",
   "about.bio2": "Pedro se especializa en cuatro áreas: finanzas, contabilidad, tecnología de la información y recursos humanos. Trabaja con ambos lados de la contratación: ayuda a las empresas a encontrar el talento adecuado y a los candidatos a conectar con empresas y conseguir el empleo.",
   "exp.eyebrow": "Áreas de especialidad",
