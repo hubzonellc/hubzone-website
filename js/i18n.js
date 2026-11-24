@@ -51,6 +51,7 @@ window.HZ_ES = {
   "a11y.home": "Hub Zone Staffing, inicio",
   "nav.menu": "Menú",
   "a11y.mainnav": "Principal",
+  "nav.home": "Inicio",
   "nav.jobs": "Buscar empleo",
   "nav.hire": "Contratar talento",
   "nav.services": "Servicios",
