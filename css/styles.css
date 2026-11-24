@@ -603,3 +603,12 @@ a.big:hover { color: var(--accent-strong); }
   .doors { margin-top: 24px; }
   .door-text { font-size: var(--step--1); }
 }
+
+/* Areas of expertise (home) */
+.expertise-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 8px; }
+.expertise { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: 14px; padding: 22px 20px; display: grid; gap: 8px; }
+.expertise h3 { margin: 0; font-size: 1.15rem; }
+.exp-num { font-weight: 800; color: var(--accent); font-size: .9rem; letter-spacing: .08em; }
+.exp-region { margin-top: 20px; font-weight: 600; }
+@media (max-width: 860px) { .expertise-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .expertise-grid { grid-template-columns: 1fr; } }
