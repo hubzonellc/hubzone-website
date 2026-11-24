@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="title.jobs">Find a Job | Hub Zone Staffing</title>
+<meta name="description" content="Looking for work? Send your info to Hub Zone Staffing in about a minute. A recruiter reaches out within 1 business day.">
+<meta name="theme-color" content="#0f2340">
+<meta property="og:title" content="Find a Job | Hub Zone Staffing">
+<meta property="og:description" content="Looking for work? Send your info to Hub Zone Staffing in about a minute. A recruiter reaches out within 1 business day.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/hubzone-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/hubzone-app-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/i18n.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><img src="assets/hubzone-logo-light-bg.svg" width="153" height="46" alt="Hub Zone Staffing, home" data-i18n-attr="alt:a11y.home"></a>
+    
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language / Idioma">
+        <button type="button" data-lang-btn="en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" data-lang-btn="es" aria-pressed="false" lang="es">ES</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"><span></span></span><span data-i18n="nav.menu">Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main" data-i18n-attr="aria-label:a11y.mainnav">
+        
+        <ul class="nav-list">
+          <li><a href="find-a-job.html" aria-current="page" data-i18n="nav.jobs">Find a Job</a></li>
+          <li><a href="hire-talent.html" data-i18n="nav.hire">Hire Talent</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+        <a class="btn btn-navy" href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero on-dark compact">
+  <div class="wrap">
+    <span data-i18n="jobs.eyebrow" class="eyebrow">For job seekers</span>
+    <h1 data-i18n="jobs.h1">Find your next job</h1>
+    <p data-i18n="jobs.lede" class="lede">Five quick fields. A real recruiter reads every one and reaches out within 1 business day.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap two-col">
+    <div class="form-shell pull-up">
+      <form class="form" name="candidate" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+          <input type="hidden" name="form-name" value="candidate">
+          <input type="hidden" name="language" value="en">
+          <p class="hidden-field"><label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field">
+            <label for="c-name"><span data-i18n="form.name">Full name</span></label>
+            <input class="input" id="c-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="c-email"><span data-i18n="form.email">Email</span></label>
+            <input class="input" id="c-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          </div>
+          <div class="field">
+            <label for="c-phone"><span data-i18n="form.phone">Phone</span></label>
+            <input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="field">
+            <label for="c-job"><span data-i18n="form.job">What kind of job do you want?</span></label>
+            <select class="select" id="c-job" name="job_type" required>
+              <option value="" disabled selected data-i18n="job.opt.0">Choose one</option>
+              <option value="Executive / Leadership" data-i18n="job.opt.1">Executive / Leadership</option>
+              <option value="Management" data-i18n="job.opt.2">Management</option>
+              <option value="Office & Administrative" data-i18n="job.opt.3">Office & administrative</option>
+              <option value="Sales & Customer Service" data-i18n="job.opt.4">Sales & customer service</option>
+              <option value="Skilled Trades & Manufacturing" data-i18n="job.opt.5">Skilled trades & manufacturing</option>
+              <option value="Warehouse & Logistics" data-i18n="job.opt.6">Warehouse & logistics</option>
+              <option value="Healthcare" data-i18n="job.opt.7">Healthcare</option>
+              <option value="Other / Not sure" data-i18n="job.opt.8">Other / not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <span class="label" id="resume-label"><span data-i18n="form.resume">Resume</span> <span data-i18n="form.opt" class="opt">(optional)</span></span>
+            <label class="file-drop" for="resume">
+              <span class="file-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 16V4m0 0l-5 5m5-5l5 5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="file-text">
+                <strong data-i18n="form.file.cta">Upload your resume</strong>
+                <span class="file-name" id="resume-name">PDF, Word or a photo. Max 8 MB.</span>
+              </span>
+              <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic" aria-describedby="resume-name resume-error">
+            </label>
+            
+            <p class="field-error" id="resume-error" role="alert" hidden></p>
+          </div>
+
+          <button class="more-toggle" type="button" aria-expanded="false" aria-controls="more-fields"><span class="plus" aria-hidden="true">+</span><span data-i18n="form.more">Add more (optional)</span></button>
+          <div class="more-fields" id="more-fields" hidden>
+            <div class="field">
+            <label for="c-linkedin"><span data-i18n="form.linkedin">LinkedIn profile</span> <span data-i18n="form.opt" class="opt">(optional)</span></label>
+            <input class="input" id="c-linkedin" name="linkedin" type="url" inputmode="url" placeholder="https://linkedin.com/in/…">
+          </div>
+            <div class="field">
+            <label for="c-video"><span data-i18n="form.video">Short video intro (link)</span> <span data-i18n="form.opt" class="opt">(optional)</span></label>
+            <input class="input" id="c-video" name="video_link" type="url" inputmode="url" placeholder="YouTube, Loom, Google Drive…" aria-describedby="c-video-hint"><span class="hint" id="c-video-hint" data-i18n="form.video.hint">A 30–60 second video about you helps companies get to know you.</span>
+          </div>
+            <div class="field">
+            <label for="c-notes"><span data-i18n="form.notes">Anything else we should know?</span> <span data-i18n="form.opt" class="opt">(optional)</span></label>
+            <textarea class="textarea" id="c-notes" name="notes" rows="4"></textarea>
+          </div>
+          </div>
+
+          <div class="form-foot">
+            <button class="btn btn-primary btn-block" type="submit"><span data-i18n="form.send.job">Send my info</span> <span class="arrow" aria-hidden="true">→</span></button>
+            <p class="fine"><span data-i18n="form.privacy">We only use your info to help you find work. We never sell it.</span> <a href="privacy.html" data-i18n="foot.privacy">Privacy Policy</a></p>
+          </div>
+      </form>
+    </div>
+
+    <aside class="aside">
+      <h2 data-i18n="jobs.next.t" style="font-size:var(--step-2)">What happens next</h2>
+      <ul class="check-list">
+        <li><div><strong data-i18n="jobs.next.1t">A person reads your info</strong><span data-i18n="jobs.next.1d">No robot screening. A recruiter looks at every one.</span></div></li>
+        <li><div><strong data-i18n="jobs.next.2t">We reach out within 1 business day</strong><span data-i18n="jobs.next.2d">By phone or email, in English or Spanish.</span></div></li>
+        <li><div><strong data-i18n="jobs.next.3t">A one-on-one conversation</strong><span data-i18n="jobs.next.3d">We learn your goals, then match you with the right company.</span></div></li>
+      </ul>
+      <div class="info-card">
+        <h3 data-i18n="jobs.talk">Prefer to talk?</h3>
+        <a class="big" href="tel:+17875659227">(787) 565-9227</a>
+        <p data-i18n="jobs.talk.hours">Interviews every day, 7:00 AM – 9:00 PM.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-mist">
+  <div class="wrap">
+    <div class="section-head">
+      <span data-i18n="roles.eyebrow" class="eyebrow">Open roles</span>
+      <h2 data-i18n="roles.title">Current openings</h2>
+      <p data-i18n="roles.text">Don’t see your job here? Send your info anyway. Many roles are filled before they’re ever posted.</p>
+    </div>
+    <div class="roles-empty placeholder">
+      <span class="placeholder-tag">Placeholder</span>
+      <p data-i18n="ph.roles">Open roles list goes here (title, location, type). Waiting on the first real openings from Hub Zone.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/hubzone-logo-dark-bg.svg" width="173" height="52" alt="Hub Zone Staffing">
+        <p data-i18n="foot.motto" class="footer-motto">30 Years of Human-Led Placement Excellence</p>
+        <!-- PLACEHOLDER: social links. Replace each href="#" with the real profile URL. -->
+        <ul class="socials"><li><a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8.2h3V4.3h-3.1c-3 0-4.6 1.9-4.6 4.7v2.1H7v3.8h2.3V22h4.1v-7.1h2.9l.5-3.8h-3.4V9.3c0-.7.3-1.1.6-1.1z"/></svg></a></li><li><a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a></li><li><a href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 9l5 3-5 3z"/></svg></a></li><li><a href="#" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h4.6L20 20h-4.6z"/><path d="M19.5 4L4.5 20" stroke="currentColor" stroke-width="1.8"/></svg></a></li><li><a href="#" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8.2" cy="8.2" r="1.3" fill="currentColor"/><rect x="7.1" y="10.5" width="2.2" height="6.5" fill="currentColor"/><path fill="currentColor" d="M11.2 10.5h2.1v1c.5-.8 1.4-1.2 2.4-1.2 1.8 0 2.7 1.1 2.7 3.1V17h-2.2v-3.3c0-1-.4-1.6-1.3-1.6s-1.5.6-1.5 1.6V17h-2.2z"/></svg></a></li><li><a href="#" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.2 3h3c.2 1.9 1.6 3.4 3.5 3.6v3c-1.3 0-2.5-.4-3.5-1.1v6.2a5.8 5.8 0 1 1-5.8-5.8c.3 0 .6 0 .9.1v3.1a2.8 2.8 0 1 0 1.9 2.6z"/></svg></a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="foot.contact">Contact</h2>
+        <ul>
+          <li><a href="mailto:javier@hubzonellc.com">javier@hubzonellc.com</a></li>
+          <li><a href="tel:+17875659227">(787) 565-9227</a></li>
+        </ul>
+        <h2 data-i18n="foot.hours">Interview hours</h2>
+        <p data-i18n="foot.hours.val">Every day, 7:00 AM – 9:00 PM</p>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="foot.offices">Offices</h2>
+        <address class="office-mini"><strong data-i18n="office.hq">Headquarters</strong>10600 Hwy 90, Suite 2401<br>Little River, SC 29566</address>
+        <address class="office-mini"><strong data-i18n="office.pr">Puerto Rico</strong>Mercantil Plaza, Suite 704<br>Hato Rey, PR 00919</address>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="foot.go">Get started</h2>
+        <ul>
+          <li><a href="find-a-job.html" data-i18n="nav.jobs">Find a Job</a></li>
+          <li><a href="hire-talent.html" data-i18n="nav.hire">Hire Talent</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Hub Zone, LLC. <span data-i18n="foot.rights">All rights reserved.</span></p>
+      <ul>
+        <li><a href="privacy.html" data-i18n="foot.privacy">Privacy Policy</a></li>
+        <li><a href="terms.html" data-i18n="foot.terms">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
