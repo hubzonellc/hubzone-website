@@ -52,6 +52,7 @@ window.HZ_ES = {
   "nav.menu": "Menú",
   "a11y.mainnav": "Principal",
   "nav.home": "Inicio",
+  "about.title": "Fundador, Hub Zone, LLC",
   "nav.jobs": "Buscar empleo",
   "nav.hire": "Contratar talento",
   "nav.services": "Servicios",
