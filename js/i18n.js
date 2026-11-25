@@ -208,7 +208,7 @@ window.HZ_ES = {
   "title.terms.3.p": "Envíe información verdadera y actual sobre usted o su empresa.",
   "title.terms": "Términos de uso | Hub Zone Staffing",
   "thanks.h1": "Recibido. Le contactaremos en 1 día laborable.",
-  "thanks.p": "Un reclutador le llamará o le escribirá. ¿Nos necesita antes? Llame al <a href=\"tel:+17875659227\">(787) 565-9227</a>, todos los días de 7:00 a. m. a 9:00 p. m.",
+  "thanks.p": "Un reclutador le llamará o le escribirá. ¿Nos necesita antes? Llame al <a href=\"tel:+18432675538\">(843) 267-5538</a>, todos los días de 7:00 a. m. a 9:00 p. m.",
   "thanks.home": "Volver al inicio",
   "title.thanks": "Gracias | Hub Zone Staffing"
 };
