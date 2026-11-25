@@ -1,4 +1,4 @@
-# Hub Zone Staffing site. Forms: candidate, company, contact (Netlify Forms).
+# Hub Zone Staffing site (hubzonellc.com). Forms: candidate, company, contact (Netlify Forms).
 [build]
   publish = "."
 
