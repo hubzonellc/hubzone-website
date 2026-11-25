@@ -1,8 +1,8 @@
 /* Spanish text for every element with data-i18n (English lives in the HTML). Generated alongside the pages. */
 window.HZ_ES = {
-  "home.eyebrow": "Hub Zone Staffing · Puerto Rico + las Carolinas",
+  "home.eyebrow": "Hub Zone Staffing · Las Carolinas + Puerto Rico",
   "home.h1": "Talento excepcional. <span class=\"accent\">Resultados ejecutivos.</span>",
-  "home.lede": "Reclutamos profesionales de finanzas, contabilidad, TI y recursos humanos para empresas en Puerto Rico, Carolina del Norte y Carolina del Sur. Díganos de qué lado está.",
+  "home.lede": "Reclutamos profesionales de finanzas, contabilidad, TI y recursos humanos para empresas en Carolina del Norte, Carolina del Sur y Puerto Rico. Díganos de qué lado está.",
   "door.hire.k": "Para empresas",
   "door.hire.title": "Estoy contratando",
   "door.hire.text": "Cuéntenos el puesto. Le traemos personas que encajan con su equipo, no solo con el anuncio.",
