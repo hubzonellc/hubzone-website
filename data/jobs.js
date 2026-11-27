@@ -42,7 +42,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1002", status: "open",
-    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=7I5OXUIYL4YNUEYCFA2PUQGA2FFXMKK6772DN26V6NUMJ6RUNML6L5334DVH2SKRNO6NEOZUV262Y722IQ2CI&action=detail"
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=7I5OXUIYL4YNUEYCFA2PUQGA2FFXMKK6772DN26V6NUMJ6RUNML6L5334DVH2SKRNO6NEOZUV262Y722IQ2CI&action=detail",
     title: "Finance Clerk",
     category: "Accounting & Finance",
     city: "Guaynabo", region: "PR",
@@ -88,7 +88,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1003", status: "open",
-    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=G4S4XLQVCMYTTYZR7FUL623ADLZJNMHJMO77PE6MMSYFWC7QMHSL6MPJUQUDEXMR62ZTHIP2KA2OX4RMD35KC&action=detail"
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=G4S4XLQVCMYTTYZR7FUL623ADLZJNMHJMO77PE6MMSYFWC7QMHSL6MPJUQUDEXMR62ZTHIP2KA2OX4RMD35KC&action=detail",
     title: "FP&A Manager",
     category: "Accounting & Finance",
     city: "San Juan", region: "PR",
@@ -126,7 +126,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1004", status: "open",
-    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=SCLR4WYHOSJO7VUAGMZ3B4PVLOKJLB7TB2NE3TD7T263ERN5YHGNGJA5G6UPW3FUQIEWCY6ADKNEKYBS6QCGG&action=detail",
     title: "Project Engineer (EIT/PE)",
     category: "Engineering",
     city: "San Juan", region: "PR",
@@ -164,7 +164,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1005", status: "open",
-    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=MBWVIT3ZDYRHL7AUGVAQI3Y7R6FDWF5NYALM6YTXXAP2MCZVAZREVRFMLYGLN4553WFBYI6IC3JR5DKOBAQM4&action=detail",
     title: "Sales Manager (Automotive)",
     category: "Sales",
     city: "Arecibo", region: "PR",
@@ -209,7 +209,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1007", status: "open",
-    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=7TTHDF3EFV7FVXLMNTLHQTDWG65QA45SJGXL4ONP5MBINVHBMPTPJKOPUUZMNHAOGLOUKMKGWAVH36GAUJTEG&action=detail",
     title: "Staff Accountant",
     category: "Accounting & Finance",
     city: "Arecibo", region: "PR",
