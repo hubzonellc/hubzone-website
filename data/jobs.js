@@ -2,10 +2,12 @@
    Same shape as the future "jobs" table, so the page won't change when the
    real database replaces this file. Public fields only: client names, fees,
    bill/pay rates and internal notes never go here.
-   Descriptions marked [sample] are placeholders until real ones come in. */
+   Descriptions marked [sample] are placeholders until real ones come in.
+   showOnWeb mirrors PCR "Show On Web". The live page will only show showOnWeb: true jobs. */
 window.HZ_JOBS = [
   {
     id: "HZ-1001",
+    showOnWeb: true, // public in PCR (Show On Web = Show)
     title: "Comptroller",
     category: "Accounting & Finance",
     city: "San Juan", region: "PR",
@@ -38,6 +40,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1002",
+    showOnWeb: false, // private in PCR: needs Pedro OK before it goes public
     title: "Finance Clerk",
     category: "Accounting & Finance",
     city: "Guaynabo", region: "PR",
@@ -55,6 +58,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1003",
+    showOnWeb: false, // private in PCR: needs Pedro OK before it goes public
     title: "FP&A Manager",
     category: "Accounting & Finance",
     city: "San Juan", region: "PR",
@@ -72,6 +76,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1004",
+    showOnWeb: false, // private in PCR: needs Pedro OK before it goes public
     title: "Project Engineer (EIT/PE)",
     category: "Engineering",
     city: "San Juan", region: "PR",

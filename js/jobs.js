@@ -30,7 +30,7 @@
     els.count.textContent = `${list.length} open ${list.length === 1 ? "job" : "jobs"}`;
     els.grid.innerHTML = list.length ? list.map((j) => `
       <button class="job-card" type="button" data-id="${esc(j.id)}">
-        <span class="cat">${esc(j.category)}</span>
+        <span class="cat">${esc(j.category)}${j.showOnWeb ? "" : " · <span style=\"color:#b45309\">Preview: not public yet</span>"}</span>
         <h3>${esc(j.title)}</h3>
         <p class="sum">${esc(j.summary)}</p>
         <span class="chips"><span class="chip">${esc(j.city)}, ${esc(j.region)}</span><span class="chip">${esc(j.workType)}</span><span class="chip plain">${esc(j.workplace)}</span></span>
