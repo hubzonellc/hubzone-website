@@ -2,7 +2,7 @@
    Same shape as the future "jobs" table, so the page won't change when the
    real database replaces this file. Public fields only: client names, fees,
    bill/pay rates and internal notes never go here.
-   Descriptions marked [sample] are placeholders until real ones come in.
+   Jobs 1002-1004 use placeholder text until Pedro OKs them.
    showOnWeb mirrors PCR "Show On Web". The live page will only show showOnWeb: true jobs. */
 window.HZ_JOBS = [
   {
@@ -50,10 +50,10 @@ window.HZ_JOBS = [
     benefits: ["Health coverage"],
     postedAt: "2026-11-12",
     industry: "Insurance",
-    summary: "[sample] Support daily accounting: payables, receivables and reconciliations.",
+    summary: "Support daily accounting: payables, receivables and reconciliations.",
     description: [
-      { h: "The role", p: ["[sample] Placeholder text. The real description will come straight from the Hub Zone Data Center."] },
-      { h: "What you'll do", list: ["[sample] Process invoices and payments", "[sample] Reconcile accounts", "[sample] Support month-end close"] }
+      { h: "The role", p: ["Full description coming soon. Call or text (843) 267-5538 to hear more about this role."] },
+      { h: "What you'll do", list: ["Process invoices and payments", "Reconcile accounts", "Support month-end close"] }
     ]
   },
   {
@@ -68,10 +68,10 @@ window.HZ_JOBS = [
     benefits: ["Health coverage", "401(k)"],
     postedAt: "2026-08-20",
     industry: "Professional services",
-    summary: "[sample] Own budgeting, forecasting and business performance analysis.",
+    summary: "Own budgeting, forecasting and business performance analysis.",
     description: [
-      { h: "The role", p: ["[sample] Placeholder text. The real description will come straight from the Hub Zone Data Center."] },
-      { h: "What you'll do", list: ["[sample] Build budgets and forecasts", "[sample] Analyze performance vs plan", "[sample] Present insights to leadership"] }
+      { h: "The role", p: ["Full description coming soon. Call or text (843) 267-5538 to hear more about this role."] },
+      { h: "What you'll do", list: ["Build budgets and forecasts", "Analyze performance vs plan", "Present insights to leadership"] }
     ]
   },
   {
@@ -86,10 +86,10 @@ window.HZ_JOBS = [
     benefits: ["Health coverage"],
     postedAt: "2026-10-20",
     industry: "Engineering & consulting",
-    summary: "[sample] Support design and delivery of engineering projects from plan to close-out.",
+    summary: "Support design and delivery of engineering projects from plan to close-out.",
     description: [
-      { h: "The role", p: ["[sample] Placeholder text. The real description will come straight from the Hub Zone Data Center."] },
-      { h: "Requirements", list: ["[sample] EIT or PE license", "[sample] Engineering degree", "[sample] Project coordination experience"] }
+      { h: "The role", p: ["Full description coming soon. Call or text (843) 267-5538 to hear more about this role."] },
+      { h: "Requirements", list: ["EIT or PE license", "Engineering degree", "Project coordination experience"] }
     ]
   }
 ];

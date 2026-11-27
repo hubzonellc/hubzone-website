@@ -17,8 +17,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/jobs.css">
 <script src="js/i18n.js" defer></script>
 <script src="js/main.js" defer></script>
+<script src="data/jobs.js" defer></script>
+<script src="js/jobs.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
@@ -51,13 +54,31 @@
   <div class="wrap">
     <span data-i18n="jobs.eyebrow" class="eyebrow">For job seekers</span>
     <h1 data-i18n="jobs.h1">Find your next job</h1>
-    <p data-i18n="jobs.lede" class="lede">Five quick fields. A real recruiter reads every one and reaches out within 1 business day.</p>
+    <p data-i18n="jobs.lede" class="lede">Browse open jobs and apply in about a minute. Don’t see a fit? Send us your info and a recruiter reaches out within 1 business day.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
+<section class="wrap jobs-tools" aria-label="Search jobs" data-i18n-attr="aria-label:jobs.search.label">
+  <div class="jobs-search">
+    <input class="q" id="jobs-q" type="search" placeholder="Search job title or keyword" aria-label="Search jobs" data-i18n-attr="placeholder:jobs.search.ph">
+    <select id="jobs-cat" aria-label="Category"></select>
+    <select id="jobs-loc" aria-label="Location"></select>
+    <button class="jobs-clear" id="jobs-clear" type="button" hidden>Clear filters</button>
+  </div>
+</section>
+<section class="wrap" style="padding-bottom:56px">
+  <div class="jobs-meta"><span id="jobs-count">Loading jobs…</span><a href="#send-info" data-i18n="jobs.nofit">Don’t see your job? Send us your info ↓</a></div>
+  <div class="jobs-grid" id="jobs-grid"></div>
+</section>
+<div class="job-drawer" id="jobs-drawer" hidden role="dialog" aria-modal="true" aria-labelledby="job-title">
+  <button class="scrim" type="button" aria-label="Close"></button>
+  <div class="panel" id="jobs-panel"></div>
+</div>
+
+<section class="section" id="send-info" style="padding-top:24px">
+  <div class="wrap"><div class="section-head" style="margin-bottom:24px"><h2 data-i18n="jobs.send.t" style="font-size:var(--step-3)">Don’t see your job? Send us your info.</h2><p data-i18n="jobs.send.p">Five quick fields. A real recruiter reads every one and reaches out within 1 business day.</p></div></div>
   <div class="wrap two-col">
-    <div class="form-shell pull-up">
+    <div class="form-shell">
       <form class="form" name="candidate" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
           <input type="hidden" name="form-name" value="candidate">
           <input type="hidden" name="language" value="en">

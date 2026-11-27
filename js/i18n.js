@@ -9,8 +9,8 @@ window.HZ_ES = {
   "door.hire.go": "Buscar talento",
   "door.work.k": "Para quienes buscan empleo",
   "door.work.title": "Busco empleo",
-  "door.work.text": "Envíe sus datos en un minuto. Un reclutador los lee y le devuelve la llamada.",
-  "door.work.go": "Aplicar ahora",
+  "door.work.text": "Vea los empleos abiertos o envíe sus datos en un minuto. Un reclutador los lee y le devuelve la llamada.",
+  "door.work.go": "Ver empleos abiertos",
   "stats.label": "Hub Zone en cifras",
   "stats.years": "años de experiencia en colocación",
   "stats.placements": "personas colocadas en empleos",
@@ -85,7 +85,7 @@ window.HZ_ES = {
   "foot.terms": "Términos de uso",
   "jobs.eyebrow": "Para quienes buscan empleo",
   "jobs.h1": "Encuentre su próximo empleo",
-  "jobs.lede": "Cinco datos rápidos. Un reclutador real lee cada solicitud y le contacta en 1 día laborable.",
+  "jobs.lede": "Vea los empleos abiertos y solicite en un minuto. ¿No ve uno que encaje? Envíe sus datos y un reclutador le contacta en 1 día laborable.",
   "form.name": "Nombre completo",
   "form.email": "Correo electrónico",
   "form.phone": "Teléfono",
@@ -212,5 +212,10 @@ window.HZ_ES = {
   "thanks.h1": "Recibido. Le contactaremos en 1 día laborable.",
   "thanks.p": "Un reclutador le llamará o le escribirá. ¿Nos necesita antes? Llame al <a href=\"tel:+18432675538\">(843) 267-5538</a>, todos los días de 7:00 a. m. a 9:00 p. m.",
   "thanks.home": "Volver al inicio",
-  "title.thanks": "Gracias | Hub Zone Staffing"
+  "title.thanks": "Gracias | Hub Zone Staffing",
+  "jobs.search.label": "Buscar empleos",
+  "jobs.search.ph": "Busque por puesto o palabra clave",
+  "jobs.nofit": "¿No ve su empleo? Envíenos sus datos ↓",
+  "jobs.send.t": "¿No ve su empleo? Envíenos sus datos.",
+  "jobs.send.p": "Cinco datos rápidos. Un reclutador real lee cada solicitud y le contacta en 1 día laborable."
 };
