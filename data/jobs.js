@@ -4,10 +4,12 @@
    Rule from Pedro (11/27): show every job whose PCR Status = Available/Open.
    Public fields only: client names, fees, guarantees, bill/pay rates, internal
    salary ranges and notes NEVER go here. Industry is OK to show.
-   Pay shown only where Pedro's own job description states it. */
+   Pay shown only where Pedro's own job description states it.
+   applyUrl = the job's secure PCR apply page; resumes go straight into PCR. */
 window.HZ_JOBS = [
   {
     id: "HZ-1001", status: "open",
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=KDM3BR4V7KVJSGGUSGSQJC73Z4XF6F6J4TXFHJTPYRJSMTZLDNUCFCWWILLFNKTUXJYYDZ6EXY5J2GF6YCMGG&action=detail",
     title: "Comptroller",
     category: "Accounting & Finance",
     city: "San Juan", region: "PR",
@@ -40,6 +42,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1002", status: "open",
+    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
     title: "Finance Clerk",
     category: "Accounting & Finance",
     city: "Guaynabo", region: "PR",
@@ -85,6 +88,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1003", status: "open",
+    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
     title: "FP&A Manager",
     category: "Accounting & Finance",
     city: "San Juan", region: "PR",
@@ -122,6 +126,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1004", status: "open",
+    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
     title: "Project Engineer (EIT/PE)",
     category: "Engineering",
     city: "San Juan", region: "PR",
@@ -159,6 +164,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1005", status: "open",
+    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
     title: "Sales Manager (Automotive)",
     category: "Sales",
     city: "Arecibo", region: "PR",
@@ -186,6 +192,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1006", status: "open",
+    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
     title: "Senior Accountant",
     category: "Accounting & Finance",
     city: "Carolina", region: "PR",
@@ -202,6 +209,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1007", status: "open",
+    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
     title: "Staff Accountant",
     category: "Accounting & Finance",
     city: "Arecibo", region: "PR",

@@ -14,11 +14,9 @@
       empty: "No jobs match that search.", emptyTry: "Clear the filters, or", emptySend: "send us your info",
       today: "Posted today", day: "Posted 1 day ago", days: (n) => `Posted ${n} days ago`, months: (n) => n === 1 ? "Posted 1 month ago" : `Posted ${n} months ago`,
       close: "Close", pay: "Pay", exp: "Experience", industry: "Industry", benefits: "Benefits",
-      applyT: "Apply for this job", applyNote: "Takes about a minute. A Hub Zone recruiter reaches out within 1 business day.",
-      name: "Full name", phone: "Phone", email: "Email", linkedin: "LinkedIn (optional)", resume: "Resume (optional, PDF or Word)",
-      consent: "I agree that Hub Zone may store my info to contact me about jobs, as described in the Privacy Policy.",
-      send: "Send application",
-      demo: (id) => `Sample only: nothing was sent. In the real version this application goes straight into the Hub Zone Data Center, linked to job ${id}.`,
+      applyT: "Apply for this job", applyNow: "Apply now", sendInfo: "Send us your info",
+      applyNote: "You will apply on our secure application page. Upload your resume or use LinkedIn or Indeed. A Hub Zone recruiter reaches out within 1 business day.",
+      applySoon: "Online applications for this job open soon. Send us your info, or call or text (843) 267-5538.",
       jobType: { "Full-time": "Full-time", "Part-time": "Part-time", "Contract": "Contract" },
       work: { "On-site": "On-site", "Hybrid": "Hybrid", "Remote": "Remote" }
     },
@@ -29,11 +27,9 @@
       empty: "Ningún empleo coincide con esa búsqueda.", emptyTry: "Borre los filtros, o", emptySend: "envíenos sus datos",
       today: "Publicado hoy", day: "Publicado hace 1 día", days: (n) => `Publicado hace ${n} días`, months: (n) => n === 1 ? "Publicado hace 1 mes" : `Publicado hace ${n} meses`,
       close: "Cerrar", pay: "Salario", exp: "Experiencia", industry: "Industria", benefits: "Beneficios",
-      applyT: "Solicite este empleo", applyNote: "Toma un minuto. Un reclutador de Hub Zone le contacta en 1 día laborable.",
-      name: "Nombre completo", phone: "Teléfono", email: "Correo electrónico", linkedin: "LinkedIn (opcional)", resume: "Currículum (opcional, PDF o Word)",
-      consent: "Acepto que Hub Zone guarde mis datos para contactarme sobre empleos, según la Política de privacidad.",
-      send: "Enviar solicitud",
-      demo: (id) => `Solo muestra: no se envió nada. En la versión real esta solicitud va directo al Centro de Datos de Hub Zone, ligada al empleo ${id}.`,
+      applyT: "Solicite este empleo", applyNow: "Solicitar ahora", sendInfo: "Envíenos sus datos",
+      applyNote: "Solicitará en nuestra página segura. Suba su currículum o use LinkedIn o Indeed. Un reclutador de Hub Zone le contacta en 1 día laborable.",
+      applySoon: "Las solicitudes en línea para este empleo abren pronto. Envíenos sus datos, o llame o envíe texto al (843) 267-5538.",
       jobType: { "Full-time": "Tiempo completo", "Part-time": "Medio tiempo", "Contract": "Contrato" },
       work: { "On-site": "Presencial", "Hybrid": "Híbrido", "Remote": "Remoto" }
     }
@@ -115,20 +111,13 @@
       <div class="facts">
         ${[[L.pay, j.salaryText], [L.exp, j.experienceYears], [L.industry, j.industry], [L.benefits, (j.benefits || []).join(", ")]].filter(([, v]) => v).map(([k, v]) => `<div class="fact"><b>${esc(k)}</b>${esc(v)}</div>`).join("")}
       </div>
-      <a class="btn btn-primary apply-jump" href="#apply-${esc(j.id)}">${esc(L.applyT)} <span aria-hidden="true">↓</span></a>
+      ${applyButton(j, L)}
       ${body}
-      <form class="apply" id="apply-${esc(j.id)}" novalidate>
+      <div class="apply">
         <h3>${esc(L.applyT)}</h3>
-        <p class="note">${esc(L.applyNote)}</p>
-        <div class="row">
-          <label>${esc(L.name)}<input name="name" required autocomplete="name"></label>
-          <label>${esc(L.phone)}<input name="phone" type="tel" inputmode="tel" required autocomplete="tel"></label>
-        </div>
-        <label>${esc(L.email)}<input name="email" type="email" inputmode="email" required autocomplete="email"></label>
-        <label>${esc(L.resume)}<input name="resume" type="file" accept=".pdf,.doc,.docx"></label>
-        <label class="consent"><input type="checkbox" name="consent" required> <span>${esc(L.consent)}</span></label>
-        <button class="btn btn-primary" type="submit">${esc(L.send)}</button>
-      </form>`;
+        <p class="note">${esc(j.applyUrl ? L.applyNote : L.applySoon)}</p>
+        ${applyButton(j, L)}
+      </div>`;
     if (els.drawer.hidden) {
       els.drawer.hidden = false;
       document.body.style.overflow = "hidden";
@@ -136,22 +125,15 @@
       $(".close", els.panel).focus();
     }
     if (push) history.replaceState(null, "", "#" + j.id);
-    $(".apply-jump", els.panel).addEventListener("click", (e) => {
-      e.preventDefault();
-      $("form.apply", els.panel).scrollIntoView({ behavior: "smooth", block: "start" });
-      setTimeout(() => $("form.apply input[name=name]", els.panel).focus({ preventScroll: true }), 400);
-    });
-    $("form", els.panel).addEventListener("submit", (e) => {
-      e.preventDefault();
-      const f = e.target;
-      if (!f.reportValidity()) return;
-      // SAMPLE ONLY: nothing is sent or stored. Real version posts to the Hub Zone Data Center.
-      const done = document.createElement("div");
-      done.className = "apply-done";
-      done.setAttribute("role", "status");
-      done.textContent = t().demo(j.id);
-      f.replaceWith(done);
-    });
+  }
+
+  // Apply = the job's secure PCR application page (resume, LinkedIn or Indeed go straight into PCR).
+  // No apply link yet → send them to the general "send us your info" form.
+  function applyButton(j, L) {
+    if (j.applyUrl) {
+      return `<a class="btn btn-primary apply-btn" href="${esc(j.applyUrl)}" target="_blank" rel="noopener">${esc(L.applyNow)} <span aria-hidden="true">↗</span></a>`;
+    }
+    return `<a class="btn btn-ghost apply-btn" href="#send-info" data-close>${esc(L.sendInfo)}</a>`;
   }
 
   function close() {

@@ -59,7 +59,7 @@
 .apply .note { font-size: var(--step--1); color: var(--muted); margin: 6px 0 14px; }
 .apply-done { padding: 18px; border-radius: var(--radius-sm); background: var(--accent-soft); color: var(--navy); font-weight: 600; }
 
-.apply-jump { margin: 18px 0 4px; width: 100%; justify-content: center; min-height: 52px; font-size: 1.05rem; }
+.apply-btn { margin: 18px 0 4px; width: 100%; justify-content: center; min-height: 52px; font-size: 1.05rem; }
 .apply { scroll-margin-top: 16px; }
 .apply input:not([type=checkbox]) { min-height: 48px; }
 .apply input[type=file] { min-height: 0; padding: 10px; background: #fff; }
@@ -70,3 +70,5 @@
 @media (max-width: 560px) { .jobs-grid { grid-template-columns: 1fr; } .job-card { padding: 18px; } }
 @media (max-width: 560px) { .jobs-meta { flex-direction: column; align-items: flex-start; gap: 6px; } }
 .jobs-meta #jobs-count { font-weight: 600; color: var(--navy); }
+.apply .apply-btn { margin: 6px 0 0; }
+.panel .btn-ghost.apply-btn { border: 2px solid var(--navy); }
