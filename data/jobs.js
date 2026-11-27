@@ -88,7 +88,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1003", status: "open",
-    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=G4S4XLQVCMYTTYZR7FUL623ADLZJNMHJMO77PE6MMSYFWC7QMHSL6MPJUQUDEXMR62ZTHIP2KA2OX4RMD35KC&action=detail"
     title: "FP&A Manager",
     category: "Accounting & Finance",
     city: "San Juan", region: "PR",
