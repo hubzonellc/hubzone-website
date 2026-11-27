@@ -42,7 +42,7 @@ window.HZ_JOBS = [
   },
   {
     id: "HZ-1002", status: "open",
-    applyUrl: "", // PCR apply link (Preview link without &src=PREVIEW)
+    applyUrl: "https://www2.pcrecruiter.net/pcrbin/jobboard.aspx?b=7I5OXUIYL4YNUEYCFA2PUQGA2FFXMKK6772DN26V6NUMJ6RUNML6L5334DVH2SKRNO6NEOZUV262Y722IQ2CI&action=detail"
     title: "Finance Clerk",
     category: "Accounting & Finance",
     city: "Guaynabo", region: "PR",
