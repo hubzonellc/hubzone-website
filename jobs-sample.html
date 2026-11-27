@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Open Jobs (sample) | Hub Zone Staffing</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Looking for work? Send your info to Hub Zone Staffing in about a minute. A recruiter reaches out within 1 business day.">
+<meta name="theme-color" content="#0f2340">
+<meta property="og:title" content="Find a Job | Hub Zone Staffing">
+<meta property="og:description" content="Looking for work? Send your info to Hub Zone Staffing in about a minute. A recruiter reaches out within 1 business day.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/hubzone-icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/jobs.css">
+<script src="js/i18n.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="data/jobs.js" defer></script>
+<script src="js/jobs.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><img src="assets/hubzone-logo-light-bg.svg" width="153" height="46" alt="Hub Zone Staffing, home" data-i18n-attr="alt:a11y.home"></a>
+    
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language / Idioma">
+        <button type="button" data-lang-btn="en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" data-lang-btn="es" aria-pressed="false" lang="es">ES</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"><span></span></span><span data-i18n="nav.menu">Menu</span></button>
+      <nav class="nav" id="site-nav" aria-label="Main" data-i18n-attr="aria-label:a11y.mainnav">
+        
+        <ul class="nav-list">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="find-a-job.html" aria-current="page" data-i18n="nav.jobs">Find a Job</a></li>
+          <li><a href="hire-talent.html" data-i18n="nav.hire">Hire Talent</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+        <a class="btn btn-navy" href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="jobs-hero">
+    <div class="wrap">
+      <span class="sample-flag">Sample · not live</span>
+      <h1>Open jobs</h1>
+      <p>Real roles from Hub Zone's clients across the Carolinas and Puerto Rico. Find one that fits and apply in about a minute.</p>
+    </div>
+  </section>
+  <section class="wrap jobs-tools" aria-label="Search jobs">
+    <div class="jobs-search">
+      <input class="q" id="jobs-q" type="search" placeholder="Search job title or keyword" aria-label="Search jobs">
+      <select id="jobs-cat" aria-label="Category"></select>
+      <select id="jobs-loc" aria-label="Location"></select>
+      <select id="jobs-type" aria-label="Work type"></select>
+    </div>
+  </section>
+  <section class="wrap" style="padding-bottom:72px">
+    <div class="jobs-meta"><span id="jobs-count">Loading jobs…</span><a href="find-a-job.html">Don't see your job? Send us your info →</a></div>
+    <div class="jobs-grid" id="jobs-grid"></div>
+  </section>
+  <div class="job-drawer" id="jobs-drawer" hidden role="dialog" aria-modal="true" aria-labelledby="job-title">
+    <button class="scrim" type="button" aria-label="Close"></button>
+    <div class="panel" id="jobs-panel"></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/hubzone-logo-dark-bg.svg" width="173" height="52" alt="Hub Zone Staffing">
+        <p data-i18n="foot.motto" class="footer-motto">30 Years of Human-Led Placement Excellence</p>
+        <ul class="socials"><li><a href="https://www.linkedin.com/in/pedror/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8.2" cy="8.2" r="1.3" fill="currentColor"/><rect x="7.1" y="10.5" width="2.2" height="6.5" fill="currentColor"/><path fill="currentColor" d="M11.2 10.5h2.1v1c.5-.8 1.4-1.2 2.4-1.2 1.8 0 2.7 1.1 2.7 3.1V17h-2.2v-3.3c0-1-.4-1.6-1.3-1.6s-1.5.6-1.5 1.6V17h-2.2z"/></svg></a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="foot.contact">Contact</h2>
+        <ul>
+          <li><a href="mailto:privera@hubzonellc.com">privera@hubzonellc.com</a></li>
+          <li><a href="tel:+18432675538">(843) 267-5538</a></li>
+        </ul>
+        <h2 data-i18n="foot.hours">Interview hours</h2>
+        <p data-i18n="foot.hours.val">Every day, 7:00 AM – 9:00 PM</p>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="foot.offices">Headquarters</h2>
+        <address class="office-mini"><strong data-i18n="office.sc">South Carolina</strong>10600 Hwy 90, Suite 2401<br>Little River, SC 29566</address>
+        <address class="office-mini"><strong data-i18n="office.pr">Puerto Rico</strong>Mercantil Plaza, Suite 704<br>Hato Rey, PR 00919</address>
+      </div>
+      <div class="footer-col">
+        <h2 data-i18n="foot.go">Get started</h2>
+        <ul>
+          <li><a href="find-a-job.html" data-i18n="nav.jobs">Find a Job</a></li>
+          <li><a href="hire-talent.html" data-i18n="nav.hire">Hire Talent</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Hub Zone, LLC. <span data-i18n="foot.rights">All rights reserved.</span></p>
+      <ul>
+        <li><a href="privacy.html" data-i18n="foot.privacy">Privacy Policy</a></li>
+        <li><a href="terms.html" data-i18n="foot.terms">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
