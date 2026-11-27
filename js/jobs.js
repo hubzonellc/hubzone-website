@@ -43,7 +43,7 @@
   const tr = (map, v) => (map && map[v]) || v;
 
   async function loadJobs() {
-    return (window.HZ_JOBS || []).slice().sort((a, b) => b.postedAt.localeCompare(a.postedAt));
+    return (window.HZ_JOBS || []).filter((j) => j.status === "open").sort((a, b) => b.postedAt.localeCompare(a.postedAt));
   }
 
   function ago(d) {
@@ -62,7 +62,7 @@
   function fillSelect(sel, values, label, map) {
     const keep = sel.value;
     sel.innerHTML = `<option value="">${esc(label)}</option>` +
-      [...new Set(values)].sort().map((v) => `<option value="${esc(v)}">${esc(tr(map, v))}</option>`).join("");
+      [...new Set(values.filter(Boolean))].sort().map((v) => `<option value="${esc(v)}">${esc(tr(map, v))}</option>`).join("");
     sel.value = keep;
   }
 
@@ -77,7 +77,7 @@
 
   function chips(j) {
     const L = t();
-    return `<span class="chips"><span class="chip">${esc(j.city)}, ${esc(j.region)}</span><span class="chip">${esc(tr(L.jobType, j.workType))}</span><span class="chip plain">${esc(tr(L.work, j.workplace))}</span></span>`;
+    return `<span class="chips"><span class="chip">${esc(j.city)}, ${esc(j.region)}</span><span class="chip">${esc(tr(L.jobType, j.workType))}</span>${j.workplace ? `<span class="chip plain">${esc(tr(L.work, j.workplace))}</span>` : ""}</span>`;
   }
 
   function render() {
@@ -91,7 +91,7 @@
     els.clear.hidden = !filtersOn();
     els.grid.innerHTML = list.length ? list.map((j) => `
       <button class="job-card" type="button" data-id="${esc(j.id)}">
-        <span class="card-top"><span class="cat">${esc(j.category)}</span>${j.showOnWeb ? "" : `<span class="badge-warn">${esc(L.notPublic)}</span>`}</span>
+        <span class="card-top"><span class="cat">${esc(j.category)}</span></span>
         <h3>${esc(j.title)}</h3>
         <p class="sum">${esc(j.summary)}</p>
         ${chips(j)}
@@ -113,10 +113,7 @@
       <h2 id="job-title">${esc(j.title)}</h2>
       ${chips(j)}
       <div class="facts">
-        <div class="fact"><b>${esc(L.pay)}</b>${esc(j.salaryText)}</div>
-        <div class="fact"><b>${esc(L.exp)}</b>${esc(j.experienceYears)}</div>
-        <div class="fact"><b>${esc(L.industry)}</b>${esc(j.industry)}</div>
-        <div class="fact"><b>${esc(L.benefits)}</b>${esc(j.benefits.join(", "))}</div>
+        ${[[L.pay, j.salaryText], [L.exp, j.experienceYears], [L.industry, j.industry], [L.benefits, (j.benefits || []).join(", ")]].filter(([, v]) => v).map(([k, v]) => `<div class="fact"><b>${esc(k)}</b>${esc(v)}</div>`).join("")}
       </div>
       <a class="btn btn-primary apply-jump" href="#apply-${esc(j.id)}">${esc(L.applyT)} <span aria-hidden="true">↓</span></a>
       ${body}
