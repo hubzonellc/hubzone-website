@@ -79,7 +79,7 @@
   <div class="wrap"><div class="section-head" style="margin-bottom:24px"><h2 data-i18n="jobs.send.t" style="font-size:var(--step-3)">Don’t see your job? Send us your info.</h2><p data-i18n="jobs.send.p">Five quick fields. A real recruiter reads every one and reaches out within 1 business day.</p></div></div>
   <div class="wrap two-col">
     <div class="form-shell">
-      <form class="form" name="candidate" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+      <form class="form" name="candidate" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="candidate">
           <input type="hidden" name="language" value="en">
           <p class="hidden-field"><label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
@@ -107,19 +107,7 @@
               <option value="Other / Not sure" data-i18n="job.opt.8">Other / not sure yet</option>
             </select>
           </div>
-          <div class="field">
-            <span class="label" id="resume-label"><span data-i18n="form.resume">Resume</span> <span data-i18n="form.opt" class="opt">(optional)</span></span>
-            <label class="file-drop" for="resume">
-              <span class="file-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 16V4m0 0l-5 5m5-5l5 5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span class="file-text">
-                <strong data-i18n="form.file.cta">Upload your resume</strong>
-                <span class="file-name" id="resume-name">PDF, Word or a photo. Max 8 MB.</span>
-              </span>
-              <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic" aria-describedby="resume-name resume-error">
-            </label>
-            
-            <p class="field-error" id="resume-error" role="alert" hidden></p>
-          </div>
+          <p class="fine resume-note" data-i18n="form.resume.note">Have a resume? Pick a job above and tap <strong>Apply now</strong> to upload it securely. A recruiter will also ask for it when they call.</p>
 
           <button class="more-toggle" type="button" aria-expanded="false" aria-controls="more-fields"><span class="plus" aria-hidden="true">+</span><span data-i18n="form.more">Add more (optional)</span></button>
           <div class="more-fields" id="more-fields" hidden>

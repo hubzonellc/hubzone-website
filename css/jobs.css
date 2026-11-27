@@ -72,3 +72,4 @@
 .jobs-meta #jobs-count { font-weight: 600; color: var(--navy); }
 .apply .apply-btn { margin: 6px 0 0; }
 .panel .btn-ghost.apply-btn { border: 2px solid var(--navy); }
+.resume-note { background: var(--accent-soft); color: var(--navy); border-radius: var(--radius-sm); padding: 12px 14px; margin: 4px 0 14px; line-height: 1.5; }

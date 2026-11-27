@@ -217,5 +217,6 @@ window.HZ_ES = {
   "jobs.search.ph": "Busque por puesto o palabra clave",
   "jobs.nofit": "¿No ve su empleo? Envíenos sus datos ↓",
   "jobs.send.t": "¿No ve su empleo? Envíenos sus datos.",
-  "jobs.send.p": "Cinco datos rápidos. Un reclutador real lee cada solicitud y le contacta en 1 día laborable."
+  "jobs.send.p": "Cinco datos rápidos. Un reclutador real lee cada solicitud y le contacta en 1 día laborable.",
+  "form.resume.note": "¿Tiene currículum? Elija un empleo arriba y toque <strong>Solicitar ahora</strong> para subirlo de forma segura. Un reclutador también se lo pedirá cuando le llame."
 };
